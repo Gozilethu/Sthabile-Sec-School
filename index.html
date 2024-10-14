@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sithabile Secondary School</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="icon" href="assets/icons/Fike-Logo.jpg" type="image/jpeg">
+</head>
+<body>
+    <div class="full-background">
+        <nav>
+            <div class="nav-container">
+                <img src="assets/icons/Fike-Logo.jpg" alt="School Logo" class="logo">
+
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <img src="assets/icons/menu-alt-svgrepo-com.svg" class="open-icon" alt="Open Menu Icon">
+                    <img src="assets/icons/close-circle-svgrepo-com.svg" class="close-icon" alt="Close Menu Icon">
+                </div>
+                
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="active"><b>HOME</b></a></li>
+                    <li><a href="#admissions"><b>ADMISSIONS</b></a></li>
+                    <li><a href="#academics"><b>ACADEMICS</b></a></li>
+                    <li><a href="#news"><b>NEWS & EVENTS</b></a></li>
+                    <li><a href="#staff"><b>STAFF</b></a></li>
+                    <li><a href="#student-resources"><b>STUDENT RESOURCES</b></a></li>
+                    <li><a href="#alumni"><b>ALUMNI</b></a></li>
+                    <li><a href="#about"><b>ABOUT US</b></a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        
+
+        <div class="welcome-image">
+            <div class="welcome-text">
+                <h1>Sithabile Secondary School</h1>
+                <p>We are a beacon of hope and opportunity in Amatikwe, providing quality education to a diverse group of learners. We welcome individuals from various cultural and socio-economic backgrounds, fostering an inclusive environment where every learner has the chance to excel. Through our comprehensive curriculum and dedicated staff, learners are not only equipped with academic knowledge but are also empowered to become successful and responsible members of the community. The school's commitment to education has made it a cornerstone of the community, helping to shape the future of Inanda for the better.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="home-image">
+            <img src="assets/images/flat-university-concept.png" alt="School Image">
+        </div>
+        <div class="welcome-p">
+            <h3>Welcome to Sithabile Secondary School</h3>
+            <p>Welcome to the esteemed Sithabile Secondary School, an integral pillar of the educational landscape in the vibrant community of Amatikwe. Sithabile Secondary School is a bustling hub of intellectual growth and development for a number of learners. These bright minds are guided, mentored, and nurtured by our dedicated faculty of teachers. Sithabile Secondary School is proud to operate under the aegis of the Pinetown Education District, which serves as a beacon of educational excellence in the KZN province. Sithabile Secondary School is committed to fostering an environment conducive to learning, growth, and advancement for all our students.</p>
+        </div>
+    </div>
+
+    <!-- Admissions Section -->
+    <section id="admissions" class="section">
+        <h2>Admissions</h2>
+        <img src="assets/images/community.jpeg" alt="Admissions" class="section-image">
+        <p>Find out how you can join our school community...</p>
+        <button onclick="applyForAdmission()">Apply Now</button>
+    </section>
+
+    <!-- Academics Section -->
+    <section id="academics" class="section">
+        <h2>Academics</h2>
+        <p style="color: rgb(217, 217, 217);">We offer a wide range of academic programs to support all learners...</p>
+        <p style="color: rgb(217, 217, 217);">Sithabile Secondary School offers a diverse curriculum aimed at holistic student development. The subjects typically available include:
+           <ul style="color: rgb(217, 217, 217);">
+            <li>Compulsory Subjects</li>
+            <li>Home Language</li>
+            <li>First Additional Language</li>
+            <li>Mathematics</li>
+            <li>Natural Sciences</li>
+            <li>Social Sciences</li>
+            <li></li>
+           </ul>            
+            <b style="color: rgb(217, 217, 217);">Elective Subjects</b> <br>
+            In addition to the compulsory subjects, students may have the option to choose from various electives, which can include:
+            <ul style="color: rgb(217, 217, 217);">
+                <li>Technology</li>
+                <li>Arts and Culture</li>
+                <li>Economic and Management Sciences</li>
+            </ul>      
+            The school focuses on providing a well-rounded education, ensuring that students are prepared for further studies and life beyond school</p>
+    </section>
+
+    <!-- News & Events Section -->
+    <section id="news" class="section">
+        <h2>News & Events</h2>
+        <img src="assets/images/newsevents.jpeg" alt="News & Events" class="section-image">
+        <style>
+            .section-image {
+                max-width: 100%; /* Make the image responsive */
+                height: auto; /* Maintain the aspect ratio */
+                border-radius: 15px; /* Apply a border radius for rounded corners */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for a lifted effect */
+                margin-top: 20px; /* Add some margin if needed */
+            }
+        </style>
+        <p>Stay up to date with our latest news and events...</p>
+        <button onclick="showUpcomingEvents()">View Events</button>
+    </section>
+
+    <!-- Staff Directory Section -->
+    <section id="staff" class="section">
+        <h2>Staff Directory</h2>
+        <p>Meet our dedicated faculty and staff...</p>
+    </section>
+
+    <!-- Student Resources Section -->
+    <section id="student-resources" class="section">
+        <h2>Student Resources</h2>
+        <img src="assets/images/student-resources-svg.jpeg" alt="Student Resources" class="section-image">
+        <p>Explore resources available to our students...</p>
+
+        <!-- Metric Result Card -->
+        <div class="resource-card">
+            <img src="assets/images/Term-resurt.jpeg" alt="Metric Result" class="card-image">
+            <h3>Metric Results</h3>
+            <button class="view-results-button" onclick="showMetricResults()">VIEW METRIC RESULT</button>
+        </div>
+
+        <!-- Metric Result Modal -->
+        <div id="metric-result-modal" class="hidden metric-modal-overlay">            
+            <div class="metric-modal-content">
+                <span class="close-modal" onclick="closeMetricResults()">&times;</span>
+                <h3>Grade 12 Metric Results</h3>
+                <table class="metric-table">
+                    <thead>
+                        <tr>
+                            <th>Class</th>
+                            <th>TERM 1</th>
+                            <th>TERM 2</th>
+                            <th>TERM 3</th>
+                            <th>TERM 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>G 12 A</td>
+                            <td>78%</td>
+                            <td>82%</td>
+                            <td>76%</td>
+                            <td>80%</td>
+                        </tr>
+                        <tr>
+                            <td>G 12 B</td>
+                            <td>75%</td>
+                            <td>79%</td>
+                            <td>74%</td>
+                            <td>77%</td>
+                        </tr>
+                        <tr>
+                            <td>G 12 C</td>
+                            <td>72%</td>
+                            <td>78%</td>
+                            <td>75%</td>
+                            <td>79%</td>
+                        </tr>
+                        <tr>
+                            <td>G 12 D</td>
+                            <td>70%</td>
+                            <td>73%</td>
+                            <td>71%</td>
+                            <td>75%</td>
+                        </tr>
+                        <tr>
+                            <td>G 12 E</td>
+                            <td>80%</td>
+                            <td>83%</td>
+                            <td>79%</td>
+                            <td>82%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+            <!-- Past Metric Results Card -->
+        <div class="resource-card">
+            <img src="assets/images/past-results.jpg" alt="Past Metric Results" class="card-image">
+            <h3>Past Metric Results</h3>
+            <button class="view-results-button" onclick="showPastMetricResults()">VIEW PAST RESULTS</button>
+        </div>
+
+        <!-- Library Info Card -->
+        <div class="resource-card">
+            <img src="assets/images/libraryinfo.jpeg" alt="School Library" class="card-image">
+            <h3>Library Info</h3>
+            <p>Explore our school library, find books, and access study materials.</p>
+            <button class="view-results-button" onclick="showLibraryInfo()">VIEW LIBRARY INFO</button>
+        </div>
+
+        <!-- Study Tips Card -->
+        <div class="resource-card">
+            <img src="assets/images/study-tips.jpeg" alt="Study Tips" class="card-image">
+            <h3>Study Tips</h3>
+            <p>Get tips on time management, effective studying, and staying motivated!</p>
+            <button class="view-results-button" onclick="showStudyTips()">VIEW STUDY TIPS</button>
+        </div>
+
+        <!-- Teacher Contact Card -->
+        <div class="resource-card">
+            <img src="assets/images/teacher-contact.jpeg" alt="Teacher Contact" class="card-image">
+            <h3>Contact Teachers</h3>
+            <p>If you have any issues, contact the relevant teachers based on your needs.</p>
+            <button class="view-results-button" onclick="showTeacherContacts()">VIEW CONTACTS</button>
+        </div>
+
+    </section>  
+
+    <!--Alumni Section-->
+    <section id="alumni" class="alumni-section">
+        <div class="alumni-container">
+            <div class="welcome-text">
+                <img src="assets/images/alumni-image.jpg" alt="Alumni Image" class="section-image">
+                <style>
+                    .section-image {
+                        max-width: 60%; /* Make the image responsive */
+                        height: auto; /* Maintain the aspect ratio */
+                        border-radius: 15px; /* Apply a border radius for rounded corners */
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for a lifted effect */
+                        margin-top: 20px; /* Add some margin if needed */
+                    }
+                </style>
+                <h2>Welcome Alumni!</h2>
+                <p>We are proud of our alumni and we are eager to stay connected with you. Please register below to stay updated with our latest news and events.</p>
+            </div>
+            
+            <button class="register-button" onclick="toggleRegistrationForm()">Register as an Alumni</button>
+        
+            <section id="alumni-reg" class="hidden">
+                <div class="alumni-card">
+                    <div class="close-icon">
+                        <img src="assets/icons/close-svgrepo-com.svg" alt="Close" class="close-icon" onclick="toggleRegistrationForm();">
+                    </div>
+    
+                    <div class="alumni-photo">
+                        <img src="assets/images/collection-graduates-wearing-medical-masks.png" alt="Graduates">
+                    </div>
+                    <div class="alumni-form">
+    
+                        <h2>Register as an Alumni</h2>
+                        <form id="alumni-registration-form">
+                            <label for="full-name">Full Name:</label>
+                            <input type="text" id="full-name" name="full-name" required>
+
+                            <label for="profession">Profession:</label>
+                            <input type="text" id="profession" name="profession" required>
+            
+                            <label for="photo">Upload Photo:</label>
+                            <input type="file" id="photo" name="photo" accept="image/*" required>
+            
+                            <label for="graduation-year">Year of Matriculation:</label>
+                            <input type="text" id="graduation-year" name="graduation-year" required pattern="\d{4}" maxlength="4" title="Please enter a valid 4-digit year">
+                            <span id="year-error" style="color: red; display: none;">Please enter a year that is before the current year.</span>
+        
+                            <script>
+                                document.getElementById('graduation-year').addEventListener('input', function() {
+                                    var year = parseInt(this.value, 10);
+                                    var currentYear = new Date().getFullYear();
+                                    var errorSpan = document.getElementById('year-error');
+        
+                                    if (year && (year >= currentYear || year < 1900)) {
+                                        errorSpan.style.display = 'inline';
+                                        this.setCustomValidity('Please enter a year that is before the current year.');
+                                    } else {
+                                        errorSpan.style.display = 'none';
+                                        this.setCustomValidity('');
+                                    }
+                                });
+        
+                                document.querySelector('form').addEventListener('submit', function(event) {
+                                    var year = parseInt(document.getElementById('graduation-year').value, 10);
+                                    var currentYear = new Date().getFullYear();
+        
+                                    if (year >= currentYear || year < 1900) {
+                                        event.preventDefault(); // Prevent form submission
+                                        alert('Please enter a valid year that is before the current year.');
+                                    }
+                                });
+
+                                document.getElementById('alumni-registration-form').addEventListener('submit', function(event) {
+                                    event.preventDefault();
+
+                                    var fullName = document.getElementById('full-name').value;
+                                    var profession = document.getElementById('profession').value;
+
+                                    document.getElementById('display-full-name').textContent = fullName;
+                                    document.getElementById('display-profession').textContent = profession;
+
+                                    document.getElementById('alumni-display').style.display = 'block';
+                                    toggleRegistrationForm(); // Close the registration form after submission
+                                });
+
+                            </script>                           
+            
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+            
+                            <button type="submit">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Alumni Cards Container -->
+            <div class="alumni-cards-container" id="alumniCardsContainer">
+                <!-- Alumni cards will be dynamically added here -->
+                <div id="alumni-card" style="display: none;">
+                    <div id="alumni-display" style="display: none;">
+                        <h3 id="display-full-name"></h3>
+                        <p id="display-profession"></p>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>    
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="section">
+        <style>
+            /* Styling for About Us section */
+            #about {
+                position: relative;
+                background: linear-gradient(135deg, #4d7daf 50%, #ffffff 50%); /* Blue and white split diagonally */
+                color: #333; /* Dark text for readability */
+                padding: 40px;
+                text-align: center;
+                border-radius: 10px; /* Optional: For smooth corners */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+            }
+
+            /* Styling for the image */
+            .section-image {
+                max-width: 100%;
+                height: auto;
+                border-radius: 15px;
+                margin-top: 20px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            /* Ensure text inside the section is readable */
+            #about h2, #about p {
+                z-index: 1; /* Ensure text appears above the background */
+                position: relative;
+            }
+        </style>
+        <h2>About Us</h2>
+        <img src="assets/images/aboutus.jpeg" alt="About Us" class="section-image">
+        <p>Welcome to our school! We are dedicated to fostering educational excellence...</p>
+    </section>
+    
+
+    <footer>
+        <div>
+            <h4>Home</h4>
+            <a href="#about"><b>About Us</b></a>
+            <a href="#streams"><b>Streams</b></a>
+            <a href="#staff"><b>Staff</b></a>
+        </div>
+        <div>
+            <h4>Explore</h4>
+            <a href="#alumni"><b>Alumni</b></a>
+            <a href="#blog"><b>Blog</b></a>
+            <a href="#policy"><b>Policy</b></a>
+            <a href="#appreciation"><b>Appreciation</b></a>
+        </div>
+
+        <div>
+            <h4>Reach Us</h4>
+            <!-- Email Link -->
+            <a href="mailto:admin@school.com">
+                <img src="assets/icons/email-mail-svgrepo-com.svg" alt="Email" style="width: 20px; height: 20px;"><b> admin@school.com</b> 
+            </a><br>
+        
+            <!-- Telephone Link -->
+            <a href="tel:+123456789">
+                <img src="assets/icons/call-add-svgrepo-com.svg" alt="Telephone" style="width: 20px; height: 20px;"><b> +123 456 789</b>
+            </a><br>
+        
+            <!-- Facebook Link -->
+            <a href="https://www.facebook.com/school" target="_blank">
+                <img src="assets/icons/facebook-1-svgrepo-com.svg" alt="Facebook" style="width: 20px; height: 20px;"><b> Follow us on Facebook</b> 
+            </a><br>
+        
+            <!-- WhatsApp Link -->
+            <a href="https://wa.me/123456789" target="_blank">
+                <img src="assets/icons/whatsapp-svgrepo-com.svg" alt="WhatsApp" style="width: 20px; height: 20px;"><b> Chat on WhatsApp</b> 
+            </a><br>
+        
+            <!-- Alumni Registration -->
+            <a href="#" onclick="toggleRegistrationForm(); return false;"><b>Alumni Registration</b></a>
+        </div>
+        
+        <!-- Voice My Concerns Section -->
+        <div id="voice-concerns-section">
+            <h4>Voice My Concerns</h4>
+            <form id="concerns-form">
+                <label for="concerns-message">Your Concerns:</label><br>
+                <textarea id="concerns-message" name="message" required></textarea><br>
+        
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+        <div>
+            <h4>Visit Us</h4>
+            <button class="get-directions-button" onclick="getDirections()">Get Directions</button>
+        </div>
+
+    </footer>
+    
+    <footer class="cop-right">
+        <p class="footer-text">
+            &copy; <span id="year"></span> <a href="admin.html" class="footer-link">Sithabile Secondary School</a> | All Rights Reserved | Powered by Thandazani Mbutho
+        </p>
+        <style>
+            /* Footer Styling */
+            footer .footer-text {
+                display: flex; /* Aligns all elements in the footer text in a row */
+                justify-content: center; /* Centers the text horizontally */
+                flex-wrap: wrap; /* Allows wrapping on smaller screens */
+                gap: 5px; /* Adds space between items */
+            }
+
+            /* Footer Link Styling */
+            .footer-link {
+                color: inherit; /* Keeps the link color the same as surrounding text */
+                text-decoration: none; /* Removes the underline */
+                font-weight: bold; /* Makes the link stand out */
+                transition: color 0.3s ease;
+            }
+
+            .footer-link:hover {
+                color: #4d7daf; /* Changes the color on hover */
+                text-decoration: underline; /* Adds underline on hover */
+            }
+        </style>
+    </footer>
+    
+    
+    <!-- Registration Section -->
+    <section id="alumni-reg" class="hidden registration-overlay">
+        <div class="alumni-card">
+            <!-- Close Icon -->
+            <div class="close-icon" onclick="toggleRegistrationForm()">
+                <img src="assets/icons/close-svgrepo-com.svg" alt="Close">
+            </div>
+
+            <div class="alumni-photo">
+                <img src="assets/images/collection-graduates-wearing-medical-masks.png" alt="Graduates">
+            </div>
+            <div class="alumni-form">
+                <h2>Register as an Alumni</h2>
+
+                <button class="close-icon" id="close-registration-card" onclick="toggleRegistrationForm()">
+                    &times;
+                </button>
+
+                <form id="alumni-registration-form">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required>
+
+                    <label for="profession">Profession:</label>
+                    <input type="text" id="profession" name="profession" required>
+
+                    <label for="photo">Upload Photo:</label>
+                    <input type="file" id="photo" name="photo" accept="image/*" required>
+
+                    <label for="graduation-year">Year of Matriculation:</label>
+                    <input type="text" id="graduation-year" name="graduation-year" required pattern="\d{4}" maxlength="4" title="Please enter a valid 4-digit year">
+                    <span id="year-error" style="color: red; display: none;">Please enter a year that is before the current year.</span>
+
+                    <script>
+                        document.getElementById('graduation-year').addEventListener('input', function() {
+                            var year = parseInt(this.value, 10);
+                            var currentYear = new Date().getFullYear();
+                            var errorSpan = document.getElementById('year-error');
+
+                            if (year && (year >= currentYear || year < 1900)) {
+                                errorSpan.style.display = 'inline';
+                                this.setCustomValidity('Please enter a year that is before the current year.');
+                            } else {
+                                errorSpan.style.display = 'none';
+                                this.setCustomValidity('');
+                            }
+                        });
+
+                        document.querySelector('form').addEventListener('submit', function(event) {
+                            var year = parseInt(document.getElementById('graduation-year').value, 10);
+                            var currentYear = new Date().getFullYear();
+
+                            if (year >= currentYear || year < 1900) {
+                                event.preventDefault(); // Prevent form submission
+                                alert('Please enter a valid year that is before the current year.');
+                            }
+                        });
+                    </script>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
