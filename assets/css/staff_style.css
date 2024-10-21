@@ -1,0 +1,74 @@
+/* Staff Directory Section Styling */
+.teacher-card {
+    justify-content: center;
+    align-items: center; /* Align items vertically */
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 400px; /* Make it responsive */
+    max-width: 900px; /* Set a maximum width for larger screens */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+
+}
+
+.teachers-image {
+    padding: 20px;
+    width: 80%;
+    height: auto;
+    flex: 1;
+    margin: 20px;
+    border-radius: 5%;
+}
+
+.teacher-image-card{
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 25%; /* Rounded image */
+}
+
+.staff-paragraph{
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.2em;
+    flex: 1;
+    margin: 20px;
+    text-align: justify;
+}
+
+.teacher-card p {
+    flex-grow: 1; /* Text takes up remaining space */
+    text-align: left; /* Align text to the left */
+    font-size: 1em; /* Responsive text size */
+}
+
+/* Background Image Styling */
+#staff {
+    background-image: url('../images/teacthes-background.jpg'); /* Set the background image */
+    background-size: cover; /* Maintain original size of the background image */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    padding: 50px 20px; /* Add padding */
+    color: white; /* Text color for better contrast */
+}
+
+
+/* Additional styling for headings and paragraphs */
+#staff h2 {
+    font-size: 2.5em; /* Larger font size for heading */
+    margin-bottom: 20px;
+}
+
+#staff p {
+    font-size: 1.2em; /* Adjust font size for paragraphs */
+}
+
+.teachers-card-section{
+    background: linear-gradient(135deg, #4d7daf 50%, #ffffff 50%);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    margin-top: 20px;
+}
