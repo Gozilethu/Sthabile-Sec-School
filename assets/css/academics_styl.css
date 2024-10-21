@@ -1,0 +1,185 @@
+/* Academics Section Styling */
+#academics {
+    background-image: url('../images/Autumn-classes-at-Sithabile-Sec.png'); /* Set background image */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    position: relative; /* Positioning context */
+    padding: 50px 20px; /* Add padding */
+    color: white; /* Change text color to white for better contrast */
+}
+
+/* Additional styling for headings and paragraphs */
+#academics h2 {
+    font-size: 2.5em; /* Adjust font size for headings */
+    margin-bottom: 20px;
+}
+
+#academics p {
+    font-size: 1.2em; /* Adjust font size for paragraphs */
+}
+
+.section {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+
+.description {
+    color: rgb(217, 217, 217);
+}
+
+.subject-list {
+    color: rgb(217, 217, 217);
+    list-style-type: none; /* Remove default list styles */
+}
+
+.rcl-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.rcl-card {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px; /* Adjust width specifically for RCL cards */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.rcl-card:hover {
+    transform: translateY(-10px); /* Slight lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.stream-card {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 400px; /* Fixed width for cards */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.glassmorphism {
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+}
+
+.streams-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    margin-top: 20px;
+}
+
+.stream-image {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.activities-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.activity-image {
+    width: 30%; /* Adjust width for responsiveness */
+    margin: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.activities-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    margin-top: 20px;
+}
+
+.activity-card {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 400px; /* Fixed width for cards */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.activity-card:hover {
+    transform: scale(1.05);
+}
+
+.activity-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.activity-description {
+    margin: 10px 0;
+}
+
+.read-more {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .activity-card {
+        width: calc(45% - 40px); /* Two cards per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .activity-card {
+        width: calc(100% - 40px); /* One card per row on small screens */
+    }
+}
+
+#why-study-at-sithabile {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(white, rgba(77, 125, 175, 0.8), rgba(77, 125, 175, 0.9));
+}
+
+#why-study-at-sithabile {
+    background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    max-width: 800px; /* Limit width for better readability */
+    margin: auto; /* Center the section */
+}
+
+h2 {
+    color: #ffffff; /* White text for contrast */
+}
+
+p {
+    color: #ffffff; /* White text for contrast */
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #why-study-at-sithabile {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}

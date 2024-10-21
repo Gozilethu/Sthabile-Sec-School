@@ -1,0 +1,322 @@
+/* General Styling for the Admissions Section */
+.section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #4d7daf;
+}
+
+/* Button Styling */
+button {
+    background-color: #4d7daf;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3a5d7c;
+}
+
+/* Admission Process Steps */
+.admission-process {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.step {
+    flex: 1 1 30%;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.step img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.step h3 {
+    font-size: 24px;
+    color: #4d7daf;
+    margin-bottom: 10px;
+}
+
+.step p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Testimonials Section */
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    color: #4d7daf;
+    margin-bottom: 40px;
+}
+
+/* Testimonial Card Styling */
+.testimonial-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Testimonial Image Styling */
+.testimonial-image {
+    border-radius: 5%;
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Blockquote Styling */
+blockquote {
+    font-size: 16px;
+    font-style: italic;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+blockquote footer {
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .testimonial-card {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* FAQ Section Styling */
+.faq-section {
+    margin-top: 50px;
+}
+
+.faq h4 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #4d7daf;
+}
+
+.faq p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+.contact-form h3 {
+    font-size: 24px;
+    color: #4d7daf;
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4d7daf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #3a5d7c;
+}
+
+/* Styling for the image */
+.section-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.responsive-video {
+    width: 100%; /* Make the video take the full width of its container */
+    max-width: 100%; /* Ensure it doesn’t exceed the container size */
+    height: auto; /* Let the height adjust automatically to preserve aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .admission-process {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step {
+        flex: 1 1 100%;
+        max-width: 90%;
+    }
+}
+
+/* Apply Now Card Styling */
+.apply-card {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+}
+
+.apply-card.hidden {
+    display: none;
+}
+
+
+.card-content {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+}
+
+.card-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.card-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.download-btn {
+    background-color: #4d7daf;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.download-btn:hover {
+    background-color: #3a5d7c;
+}
+
+.apply-card {
+    position: fixed; /* Position it fixed to overlay the screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.close-btn {
+    background:  #4d7daf;
+    position: absolute; /* Position the button absolutely */
+    top: 15px; /* Distance from the top */
+    right: 15px; /* Distance from the right */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 5px; /* Padding around the button */
+}
+
+.close-modal {
+    background:  #4d7daf; /* Ensure background is transparent */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 5px; /* Padding around the button */
+}
+
+.close-icon {
+    width: 24px; /* Icon width */
+    height: 24px; /* Icon height */
+}
+
+
+.form-image {
+    max-width: 100%; /* Make sure the image is responsive */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners */
+    margin: 20px 0; /* Space around the image */
+}

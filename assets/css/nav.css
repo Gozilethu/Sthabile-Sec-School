@@ -1,0 +1,222 @@
+/* Style for navigation and welcome section within the full-background container */
+nav, .welcome-image {
+    background: none; /* Remove any additional background */
+    color: #000; /* Text color */
+}
+
+/* Style for navigation */
+nav {
+    padding: 10px; /* Padding for navigation */
+    position: relative; /* Positioning context */
+    z-index: 2; /* Ensure it is above other content */
+}
+
+/* Optional: Overlay for better text contrast */
+nav::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white overlay */
+    z-index: 1; /* Overlay behind the text but in front of the background image */
+}
+
+/* Ensure the logo in the nav does not interfere with the background */
+.nav-container {
+    position: relative;
+    z-index: 2; /* Make sure it is above the overlay */
+}
+
+/* Ensure the text within the navigation is readable */
+.nav-links a {
+    color: #000; /* Text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px; /* Padding for links */
+    display: block; /* Block display for better spacing */
+}
+
+/* Optional: Add hover effects to navigation links */
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.7); /* Light background on hover */
+    color: #4d7daf; /* Power blue text on hover */
+}
+
+/* Optional: Add hover effects to navigation links */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Basic styling for the menu and close icons */
+.menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.menu-icon img {
+    width: 24px; /* Adjust the size as needed */
+    height: 24px; /* Ensure icons maintain aspect ratio */
+    vertical-align: middle; /* Align icons with text */
+}
+
+.close-icon {
+    display: none;
+}
+
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for the navigation links (hidden by default in mobile view) */
+.nav-links {
+    display: none;
+}
+
+/* When the menu is active, show the navigation links */
+.menu-active .nav-links {
+    display: block;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+}
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.7); 
+    color: #4d7daf;
+}
+
+.nav-links a {
+    text-decoration: none; /* Removes underline from all links */
+    color: black; /* Default color for all links */
+}
+
+.nav-links a:hover {
+    color: #4d7daf; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+.nav-links a.active {
+    color: #4d7daf; /* Active link color */
+    text-decoration: underline; /* Underline for active link */
+    font-weight: bold; /* Optionally make the active link bold */
+}
+/* Responsive styling */
+/* Default state: Hide the menu icon on larger screens */
+.menu-icon {
+    display: none;
+}
+
+/* Show the menu icon on screens 768px and smaller */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        padding: 8px; /* Adjust as needed */
+        cursor: pointer;
+    }
+
+    /* Hide the navigation links initially on smaller screens */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+        position: absolute;
+        top: 60px;
+        right: 0;
+        z-index: 1;
+        align-items: center;
+        justify-content: center; /* Center align vertically */
+        backdrop-filter: blur(2px); /* Apply blur effect */
+        border: 1px solid rgba(255, 255, 255, 0.2); /* Optional: Add a subtle border */
+        width: 50%; /* Adjust width for smaller screens */
+    }
+
+    /* Show the navigation links when menu is active */
+    .nav-links.active {
+        display: flex;
+    }
+
+    /* Adjust the size of the menu and close icons */
+    .menu-icon img {
+        width: 24px; /* Adjust size as needed */
+        height: 24px;
+    }
+
+    .nav-links li {
+        margin: 0;
+        width: 100%; /* Ensure each link takes the full width */
+        text-align: center; /* Center align text */
+        position: relative; /* Needed for the underline positioning */
+        border-bottom: none; /* Remove bottom border */ 
+    }
+
+    .nav-links a {
+        padding: 12px;
+        display: block; /* Ensure each link is on a new line */
+        width: 100%; /* Ensure each link takes the full width */
+        color: black; /* Default text color */
+        text-decoration: none; /* Remove underline */
+        position: relative; /* Needed for the underline positioning */
+        transition: color 0.3s ease; /* Smooth transition for color */
+    }
+
+    .nav-links a::after {
+        content: ""; /* Empty content for pseudo-element */
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px; /* Height of the underline */
+        background-color: #4d7daf; /* Power blue underline color */
+        transform: scaleX(0); /* Start with no width */
+        transform-origin: bottom right; /* Animate from right to left */
+        transition: transform 0.3s ease; /* Smooth transition for underline */
+    }
+
+    .nav-links a:hover::after {
+        transform: scaleX(1); /* Scale to full width on hover */
+        transform-origin: bottom left; /* Animate from left to right */
+    }
+
+    .nav-links a:active {
+        color: #4d7daf; /* Change text color on click */
+        transform: translateX(10px); /* Move link to the right when clicked */
+    }
+
+    .nav-links.active {
+        display: flex; /* Display the links when the menu is active */
+    }
+
+    .menu-icon.active .open-icon {
+        display: none; /* Hide the open icon when active */
+    }
+
+    .menu-icon.active .close-icon {
+        display: inline-block; /* Show the close icon when active */
+    }
+}
+
+/* Optional: Hide the nav links on larger screens and display flex for larger screens */
+@media (min-width: 769px) {
+    .nav-links {
+        display: flex;  
+        flex-direction: row; 
+    }
+}

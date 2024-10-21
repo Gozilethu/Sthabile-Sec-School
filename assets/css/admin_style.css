@@ -1,0 +1,346 @@
+/* Admin Page Background */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-image: url('../images/admin-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Full height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Glassmorphism Style for Admin Login Card */
+.admin-login-card {
+    backdrop-filter: blur(10px) saturate(150%);
+    -webkit-backdrop-filter: blur(10px) saturate(150%);
+    background-color: rgba(255, 255, 255, 0.3); /* Transparent glass-like effect */
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 20px;
+    max-width: 350px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Admin Avatar Image */
+.admin-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* Form Elements */
+#admin-login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#admin-login-form button {
+    padding: 10px 15px;
+    width: 100%;
+    background-color: #4d7daf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#admin-login-form button:hover {
+    background-color: #3a5d7c;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .admin-login-card {
+        max-width: 90%;
+    }
+}
+
+/* Hidden class to hide elements */
+.hidden {
+    display: none;
+}
+
+/* Close Button Styling */
+.close-button {
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.close-button:hover {
+    background-color: #d32f2f;
+}
+
+
+#admin-login-form button:hover {
+    background-color: #3a5d7c;
+}
+
+/* Staff Cards */
+.staff-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.staff-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.staff-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.staff-card h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.staff-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    #admin-login-form input {
+        font-size: 14px; /* Slightly smaller font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    #admin-login-form input {
+        font-size: 12px; /* Further reduce font size for very small screens */
+        padding: 8px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .admin-login-card {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    #admin-login-form input, #admin-login-form button {
+        width: 100%;
+    }
+
+    .staff-card {
+        width: 100%;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .admin-avatar {
+        width: 50px;
+        height: 50px;
+    }
+
+    h4, h2 {
+        font-size: 1.2em;
+    }
+}
+/* Admin Dashboard Card Styling */
+.dashboard-card {
+    backdrop-filter: blur(10px) saturate(150%);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 90%;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #f0f0f0; /* Light color for readability */
+    text-align: center;
+    gap: 20px; /* Space between cards */
+}
+
+/* Admin Section Styling */
+.admin-section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(138, 138, 138, 0.8); /* Light background for each section */
+}
+
+.admin-section h3 {
+    color: #f0f0f0; /* Light color for headings */
+}
+
+/* Add Staff Image */
+.add-staff-image {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+/* Message Display for Success/Error */
+.message {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.message.success {
+    background-color: #4caf50;
+    color: white;
+}
+
+.message.error {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Add Staff Image */
+.add-staff-image {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+/* Form Elements */
+#admin-dashboard form input, #admin-dashboard form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#admin-dashboard form button {
+    padding: 10px;
+    background-color: #4d7daf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#admin-dashboard form button:hover {
+    background-color: #3a5d7c;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .dashboard-card {
+        max-width: 90%;
+    }
+}
+
+/* Alumni Cards Container */
+.alumni-cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    gap: 20px; /* Space between cards */
+}
+
+
+/* Search Alumni Input */
+#search-alumni {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px; /* Responsive max-width */
+    margin-bottom: 20px; /* Space below the search input */
+}
+
+/* Alumni Card Styling */
+.alumni-card {
+    background-color: #f9f9f9; /* Light background for cards */
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hide-alumni {
+    background-color: #f44336; /* Red for hide button */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hide-alumni:hover {
+    background-color: #d32f2f; /* Darker shade on hover */
+}
+.admin-section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for each section */
+}
+
+/* Search Alumni Input */
+#search-alumni {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px; /* Responsive max-width */
+}
+
+/* Search Button */
+.search-button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #4d7daf; /* Color for the button */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #3a5d7c; /* Darker shade on hover */
+}
+
+/* Alumni Cards Container */
+.alumni-cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    gap: 20px; /* Space between cards */
+}
+
+/* Alumni Card Styling */
+.alumni-card {
+    background-color: #f9f9f9; /* Light background for cards */
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 200px; /* Flex-grow, flex-shrink, flex-basis */
+    min-width: 200px; /* Minimum width for the cards */
+    text-align: center;
+}

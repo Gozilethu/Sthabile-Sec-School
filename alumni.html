@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni - Sithabile Secondary School</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icons/Fike-Logo.jpg" type="image/jpeg">
+</head>
+<body>
+    <div class="full-background">
+        <nav>
+            <div class="nav-container">
+                <img src="icons/Fike-Logo.jpg" alt="School Logo" class="logo">
+
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <img src="icons/menu-svgrepo-com.svg" class="open-icon" alt="Open Menu Icon">
+                    <img src="icons/close-svgrepo-com.svg" class="close-icon" alt="Close Menu Icon">
+                </div>
+                
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html"><b>HOME</b></a></li>
+                    <li><a href="#about"><b>ABOUT US</b></a></li>
+                    <li><a href="#admissions"><b>Admissions</b></a></li>
+                    <li><a href="#academics"><b>Academics</b></a></li>
+                    <li><a href="#news"><b>News & Events</b></a></li>
+                    <li><a href="#staff"><b>Staff Directory</b></a></li>
+                    <li><a href="#student-resources"><b>Student Resources</b></a></li>
+                    <li><a href="alumni.html" class="active"><b>ALUMNI</b></a></li>
+                </ul>
+            </div>
+        </nav>
+
+<body>
+
+    <div class="alumni-container">
+        <div class="welcome-text">
+            <h2>Welcome Alumni!</h2>
+            <p>We are proud of our alumni and are eager to stay connected with you. Please register below to stay updated with our latest news and events.</p>
+        </div>
+        
+        <button class="register-button" onclick="toggleRegistrationForm()">Register as an Alumni</button>
+    
+        <section id="alumni-reg" class="hidden">
+            <div class="alumni-card">
+                <div class="close-icon">
+                    <!-- Close Icon -->
+                    <img src="icons/close-svgrepo-com.svg" alt="Close" class="close-icon" onclick="toggleRegistrationForm();">
+                </div>
+
+                <div class="alumni-photo">
+                    <img src="images/collection-graduates-wearing-medical-masks.png" alt="Graduates">
+                </div>
+                <div class="alumni-form">
+
+                    <h2>Register as an Alumni</h2>
+                    <form id="alumni-registration-form">
+                        <label for="full-name">Full Name:</label>
+                        <input type="text" id="full-name" name="full-name" required>
+        
+                        <label for="photo">Upload Photo:</label>
+                        <input type="file" id="photo" name="photo" accept="image/*" required>
+        
+                        <label for="graduation-year">Year of Matriculation:</label>
+                        <input type="text" id="graduation-year" name="graduation-year" required>
+        
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+        
+                        <button type="submit">Register</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+
+    </div>
+
+
+    <footer>
+        <div>
+            <h4>Home</h4>
+            <a href="#about">About Us</a>
+            <a href="#streams">Streams</a>
+            <a href="#staff">Staff</a>
+        </div>
+        <div>
+            <h4>Explore</h4>
+            <a href="#alumni">Alumni</a>
+            <a href="#blog">Blog</a>
+            <a href="#policy">Policy</a>
+            <a href="#appreciation">Appreciation</a>
+        </div>
+        <div>
+            <h4>Reach Us</h4>
+            <a href="#contact">Contact</a>
+            <a href="#alumni-reg">Alumni Registration</a>
+        </div>
+        <div>
+            <h4>Follow Us</h4>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+        </div>
+        <div>
+            <h4>Contact Information</h4>
+            <p>Email: info@sithabilesecondary.edu</p>
+            <p>Call: +27 123 456 789</p>
+            <p>Address: 123 School Lane, Amatikwe, KZN, South Africa</p>
+        </div>
+
+        <div>
+            <h4>Visit Us</h4>
+            <button class="get-directions-button" onclick="getDirections()">Get Directions</button>
+        </div>
+
+    </footer>
+    
+    <footer class="cop-right">
+        <p class="footer-text">
+            &copy; <span id="year"></span> Sithabile Secondary School | All Rights Reserved | Powered by Thandazani Mbutho
+        </p>
+    </footer>
+
+    <!-- Registration Section -->
+    <section id="alumni-reg" class="hidden registration-overlay">
+        <div class="alumni-card">
+
+            <div class="alumni-photo">
+                <img src="images/collection-graduates-wearing-medical-masks.png" alt="Graduates">
+            </div>
+            <div class="alumni-form">
+                <h2>Register as an Alumni</h2>
+                <!-- Close Icon -->
+                <button class="close-icon" id="close-registration-card" onclick="toggleRegistrationForm()"><img src="icons/close-svgrepo-com.svg" alt="Close"  ></button>
+
+                <form id="alumni-registration-form">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required>
+
+                    <label for="photo">Upload Photo:</label>
+                    <input type="file" id="photo" name="photo" accept="image/*" required>
+
+                    <label for="graduation-year">Year of Matriculation:</label>
+                    <input type="text" id="graduation-year" name="graduation-year" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+            //alert('Right-click is disabled on this website.');
+        });
+    </script>
+    <script src="script.js"></script> 
+</body>
+</html>
