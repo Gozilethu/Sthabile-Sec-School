@@ -103,6 +103,7 @@ footer a::after {
 }
 
 footer a:hover {
+    text-decoration: none;
     color: rgb(255, 255, 255); /* Change text color on hover */
 }
 
@@ -857,4 +858,69 @@ form input, form select {
 }
 
 
+/* Modal container styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 10vh; /* Adjust for responsive vertical padding */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal content styling */
+.modal-content {
+    background-color: #ffffff;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #888;
+    width: 90%; /* Default to 90% width for small screens */
+    max-width: 500px; /* Maximum width for larger screens */
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Close button styling */
+.close {
+    color: #4400ff;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Close button hover/focus states */
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .modal-content {
+        padding: 15px; /* Smaller padding on smaller screens */
+        width: 95%; /* Expand width slightly for smaller devices */
+    }
+    
+    .close {
+        font-size: 20px; /* Adjust close button size */
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-content {
+        padding: 10px; /* Minimal padding for very small screens */
+        font-size: 14px; /* Smaller font size for readability */
+    }
+
+    .close {
+        font-size: 18px;
+    }
+}
 

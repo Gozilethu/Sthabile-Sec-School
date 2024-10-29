@@ -143,7 +143,8 @@ window.onload = function() {
     }
 };
 
-// Handle Email Submission
+/*
+// Handle Email Submission 
 document.getElementById('send-email-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -153,6 +154,7 @@ document.getElementById('send-email-form').addEventListener('submit', function(e
     const mailtoLink = `mailto:mbuthothandazani@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
     window.location.href = mailtoLink;
 });
+*/
 
 // Handle Voice My Concerns Submission
 document.getElementById('concerns-form').addEventListener('submit', function(event) {
@@ -248,6 +250,37 @@ document.getElementById('add-staff-form').addEventListener('submit', function(ev
     .catch(error => console.error('Error:', error));
 });
 
+function viewMore(stream) {
+    let title = "";
+    let description = "";
+
+    if (stream === 'science') {
+        title = "Science Stream";
+        description = "The Science stream offers an in-depth focus on Physics, Chemistry, Life Sciences, and Mathematics...";
+    } else if (stream === 'general') {
+        title = "General Stream";
+        description = "The General stream provides a broad range of subjects, focusing on foundational skills in communication...";
+    } else if (stream === 'commerce') {
+        title = "Commerce Stream";
+        description = "The Commerce stream is centered around subjects such as Accounting, Business Studies, Economics...";
+    }
+
+    document.getElementById("modal-title").textContent = title;
+    document.getElementById("modal-description").textContent = description;
+    document.getElementById("modal").style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("modal").style.display = "none";
+}
+
+// Close the modal if user clicks outside of it
+window.onclick = function(event) {
+    const modal = document.getElementById("modal");
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+};
 
 
 

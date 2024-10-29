@@ -67,6 +67,7 @@ nav::after {
 }
 
 .nav-links.active {
+    text-decoration: none;
     display: flex;
     flex-direction: column;
 }

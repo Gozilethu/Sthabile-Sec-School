@@ -42,18 +42,27 @@
             <div class="welcome-text">
                 <h1>Sithabile Secondary School</h1>
                 <p>We are a beacon of hope and opportunity in Amatikwe, providing quality education to a diverse group of learners. We welcome individuals from various cultural and socio-economic backgrounds, fostering an inclusive environment where every learner has the chance to excel. Through our comprehensive curriculum and dedicated staff, learners are not only equipped with academic knowledge but are also empowered to become successful and responsible members of the community. The school's commitment to education has made it a cornerstone of the community, helping to shape the future of Inanda for the better.</p>
-
             </div>
         </div>
     </div>
 
+    <!---View more modal-->
+    <div id="modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-description" style="color: gray;"></p>
+        </div>
+    </div>
+    
     <div class="flex-container">
         <div class="home-image">
             <img src="assets/images/flat-university-concept.png" alt="School Image">
         </div>
         <div class="welcome-p">
             <h3>Welcome to Sithabile Secondary School</h3>
-            <p style="color: #5b5b5b; margin: 20px 0; font-size: 1.2em;">Welcome to the esteemed Sithabile Secondary School, an integral pillar of the educational landscape in the vibrant community of Amatikwe. Sithabile Secondary School is a bustling hub of intellectual growth and development for a number of learners. These bright minds are guided, mentored, and nurtured by our dedicated faculty of teachers. Sithabile Secondary School is proud to operate under the aegis of the Pinetown Education District, which serves as a beacon of educational excellence in the KZN province. Sithabile Secondary School is committed to fostering an environment conducive to learning, growth, and advancement for all our students.</p>
+            <p style="color: #5b5b5b; margin: 20px 0; font-size: 1.2em;">Welcome to the esteemed Sithabile Secondary School, an integral pillar of the educational landscape in the vibrant community of Amatikwe. The bustling hub of intellectual growth and development for a number of learners. These bright minds are guided, mentored, and nurtured by our dedicated faculty of teachers. We are proud to operate under the aegis of the Pinetown Education District, which serves as a beacon of educational excellence in the KZN province. As Sithabile Secondary School we are committed to fostering an environment conducive to learning, growth, and advancement for all our students.</p>
+            <p style="color: #5b5b5b; margin: 20px 0; font-size: 1.2em;">We are a public secondary school situated at Amatikwe Area 8. The School was established in 1992 housing in prefabricated structures (tin shacks) grade 8 only and less than 12 educators. Today it is a big and modern school starting from grade 8 to grade 12 with an enrolment of about 1400 learners and 45 educators. Sithabile Secondary School has, over the years, been producing good results at Matric level, and is proud to have produced learners who persued different careers in various fields including science, social science and education.</p>
         </div>
     </div>
 
@@ -654,6 +663,9 @@
     <!-- Chat bot  -->
     <div class="chat-container">
         <div class="chat-header">
+            <div class="ai-image">
+                <img src="assets/images/ai_chat_logo.jpg" alt="ai logo">
+            </div>
             <h3>Chat with Us</h3>
             <span class="close-chat">&times;</span>
         </div>
@@ -678,7 +690,6 @@
 
     <div class="open-chat-btn">
         <img src="assets/icons/conversation-alt-svgrepo-com.svg" alt="chat bot logo" class="chatbot">
-        Chat
     </div>
     
 
@@ -695,8 +706,6 @@
             <a href="#alumni"><b>Alumni</b></a>
             <a href="#blog"><b>Blog</b></a>
             <a href="#policy"><b>Policy</b></a>
-            <!-- Alumni Registration -->
-            <a href="#alumni-section" onclick="toggleRegistrationForm(); return false;"><b>Alumni Registration</b></a>
         </div>
 
         <div>
@@ -707,8 +716,8 @@
             </a><br>
         
             <!-- Telephone Link -->
-            <a href="tel:+123456789">
-                <img src="assets/icons/call-add-svgrepo-com.svg" alt="Telephone" style="width: 20px; height: 20px;"><b> +123 456 789</b>
+            <a href="tel:+031 518 5796">
+                <img src="assets/icons/call-add-svgrepo-com.svg" alt="Telephone" style="width: 20px; height: 20px;"><b> +27 031 518 5796</b>
             </a><br>
         
             <!-- Facebook Link -->
@@ -742,7 +751,7 @@
     
     <footer class="cop-right">
         <p class="footer-text">
-            Copyright &copy; <span id="year">2024</span> <a href="admin.html" class="footer-link">Sithabile Secondary School</a> | All Rights Reserved | Powered by Thandazani Mbutho
+            Copyright &copy; <span id="year">2024</span> <a href="admin.html" class="footer-link" style="text-decoration: none; color: inherit;">Sithabile Secondary School</a> | All Rights Reserved | Powered by Thandazani Mbutho
         </p>
         <style>
             /* Footer Styling */
