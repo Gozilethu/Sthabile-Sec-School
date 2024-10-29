@@ -21,7 +21,7 @@ app.use(limiter);
 
 const apiKey = process.env.OPENAI_API_KEY;
 
-app.post('/api/chat', async (req, res) => {
+app.post('assets/js/ai_script.js', async (req, res) => {
   const { message } = req.body;
 
   try {
