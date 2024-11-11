@@ -4,12 +4,27 @@ nav, .welcome-image {
     color: #000; /* Text color */
 }
 
+a {
+    text-decoration: none; /* Removes the underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Optional: Adds underline on hover */
+}
+
+
 /* Style for navigation */
 nav {
-    padding: 10px; /* Padding for navigation */
-    position: relative; /* Positioning context */
-    z-index: 2; /* Ensure it is above other content */
-}
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.4); /* Adjust the alpha value for desired transparency */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
 
 /* Optional: Overlay for better text contrast */
 nav::after {
@@ -22,6 +37,11 @@ nav::after {
     background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white overlay */
     z-index: 1; /* Overlay behind the text but in front of the background image */
 }
+
+.logo {
+    height: 50px;
+    width: auto;
+  }
 
 /* Ensure the logo in the nav does not interfere with the background */
 .nav-container {
@@ -48,7 +68,10 @@ nav::after {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+    padding: 0.75rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 
 /* Basic styling for the menu and close icons */
 .menu-icon {
@@ -70,7 +93,10 @@ nav::after {
     text-decoration: none;
     display: flex;
     flex-direction: column;
+    color: #4d7daf; /* Active link color */
+    font-weight: bold; /* Optional for emphasis */
 }
+
 
 /* Style for the navigation links (hidden by default in mobile view) */
 .nav-links {

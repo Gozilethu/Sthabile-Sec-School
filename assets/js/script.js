@@ -282,6 +282,28 @@ window.onclick = function(event) {
     }
 };
 
+document.addEventListener('scroll', function() {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    let scrollPosition = window.scrollY + 100; // Adjust offset to detect the section accurately
+
+    sections.forEach(section => {
+        if (
+            section.offsetTop <= scrollPosition &&
+            section.offsetTop + section.offsetHeight > scrollPosition
+        ) {
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === section.getAttribute('id')) {
+                    link.classList.add('active');
+                }
+            });
+        }
+    });
+});
+
+
 
 
 

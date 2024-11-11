@@ -1,12 +1,22 @@
-document.querySelector('.open-chat-btn').addEventListener('click', function() {
-    document.querySelector('.chat-container').classList.add('open');
-    document.querySelector('.open-chat-btn').style.display = 'none';
+document.addEventListener('DOMContentLoaded', function() {
+    const openChatButton = document.querySelector('.open-chat-btn');
+    const chatContainer = document.querySelector('.chat-container');
+    const closeChatButton = document.querySelector('.close-chat');
+
+    // Check if elements exist before adding event listeners
+    if (openChatButton && chatContainer && closeChatButton) {
+        openChatButton.addEventListener('click', function() {
+            chatContainer.classList.add('open');
+            openChatButton.style.display = 'none';
+        });
+
+        closeChatButton.addEventListener('click', function() {
+            chatContainer.classList.remove('open');
+            openChatButton.style.display = 'flex';
+        });
+    }
 });
 
-document.querySelector('.close-chat').addEventListener('click', function() {
-    document.querySelector('.chat-container').classList.remove('open');
-    document.querySelector('.open-chat-btn').style.display = 'block';
-});
 
 const response = await fetch('http://localhost:3000/chatbot-server', {
 

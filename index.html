@@ -25,7 +25,7 @@
                 </div>
                 
                 <ul class="nav-links" id="navLinks">
-                    <li><a href="index.html" class="active"><b>HOME</b></a></li>
+                    <li><a href="#home" class="active"><b>HOME</b></a></li>
                     <li><a href="#admissions"><b>ADMISSIONS</b></a></li>
                     <li><a href="#academics"><b>ACADEMICS</b></a></li>
                     <li><a href="#news"><b>NEWS & EVENTS</b></a></li>
@@ -36,35 +36,68 @@
                 </ul>
             </div>
         </nav>
-        
-        
 
+    <script>
+        document.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-links a');
+
+            let scrollPosition = window.scrollY + 100; // Adjust offset to detect the section accurately
+
+            sections.forEach(section => {
+                if (
+                    section.offsetTop <= scrollPosition &&
+                    section.offsetTop + section.offsetHeight > scrollPosition
+                ) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href').substring(1) === section.getAttribute('id')) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+        
+        
+    <section id="home">
         <div class="welcome-image">
             <div class="welcome-text">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
                 <h1>Sithabile Secondary School</h1>
                 <p>We are a beacon of hope and opportunity in Amatikwe, providing quality education to a diverse group of learners. We welcome individuals from various cultural and socio-economic backgrounds, fostering an inclusive environment where every learner has the chance to excel. Through our comprehensive curriculum and dedicated staff, learners are not only equipped with academic knowledge but are also empowered to become successful and responsible members of the community. The school's commitment to education has made it a cornerstone of the community, helping to shape the future of Inanda for the better.</p>
             </div>
         </div>
-    </div>
+        </div>
 
-    <!---View more modal-->
-    <div id="modal" class="modal" style="display:none;">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h3 id="modal-title"></h3>
-            <p id="modal-description" style="color: gray;"></p>
+        <!---View more modal-->
+        <div id="modal" class="modal" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h3 id="modal-title"></h3>
+                <p id="modal-description" style="color: gray;"></p>
+            </div>
         </div>
-    </div>
-    
-    <div class="flex-container">
-        <div class="home-image">
-            <img src="assets/images/flat-university-concept.png" alt="School Image">
-        </div>
-        <div class="welcome-p">
-            <h3>Welcome to Sithabile Secondary School</h3>
-            <p>Welcome to the esteemed Sithabile Secondary School, an integral pillar of the educational landscape in the vibrant community of Amatikwe. Sithabile Secondary School is a bustling hub of intellectual growth and development for a number of learners. These bright minds are guided, mentored, and nurtured by our dedicated faculty of teachers. Sithabile Secondary School is proud to operate under the aegis of the Pinetown Education District, which serves as a beacon of educational excellence in the KZN province. Sithabile Secondary School is committed to fostering an environment conducive to learning, growth, and advancement for all our students.</p>
-        </div>
-    </div>
+        
+        <div class="flex-container">
+            <div class="home-image">
+                <img src="assets/images/flat-university-concept.png" alt="School Image">
+            </div>
+            <div class="welcome-p">
+                <h3>Welcome to Sithabile Secondary School</h3>
+                <p style="color: gray;">Welcome to the esteemed Sithabile Secondary School, an integral pillar of the educational landscape in the vibrant community of Amatikwe. Sithabile Secondary School is a bustling hub of intellectual growth and development for a number of learners. These bright minds are guided, mentored, and nurtured by our dedicated faculty of teachers. Sithabile Secondary School is proud to operate under the aegis of the Pinetown Education District, which serves as a beacon of educational excellence in the KZN province. Sithabile Secondary School is committed to fostering an environment conducive to learning, growth, and advancement for all our students.</p>
+                <p style="color: gray;">
+                    Sithabile Secondary School is proud to operate under the aegis of the Pinetown Education District, which serves as a beacon of educational excellence in the KZN province. We are committed to fostering an environment conducive to learning, growth, and advancement for all our students.
+                </p>
+            </div>
+        </div>       
+    </section>
+
 
     <!-- Admissions Section -->
     <section id="admissions" class="section">
@@ -684,11 +717,7 @@
         </div>
     </div>
     
-    <!--
-    <button class="open-chat-btn">
-        <img src="assets/icons/conversation-alt-svgrepo-com.svg" alt="chat bot logo" class="chatbot">
-        Chat
-    </button>-->
+
 
     <div class="open-chat-btn">
         <img src="assets/icons/conversation-alt-svgrepo-com.svg" alt="chat bot logo" class="chatbot">

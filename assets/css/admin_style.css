@@ -8,7 +8,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh; /* Full height */
+    height: 100vh; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +18,7 @@ body {
 .admin-login-card {
     backdrop-filter: blur(10px) saturate(150%);
     -webkit-backdrop-filter: blur(10px) saturate(150%);
-    background-color: rgba(255, 255, 255, 0.3); /* Transparent glass-like effect */
+    background-color: rgba(255, 255, 255, 0.3); 
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     padding: 20px;
