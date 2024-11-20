@@ -84,7 +84,7 @@ document.getElementById("alumni-registration-form").addEventListener("submit", f
     
     reader.onload = function(event) {
         const imageSrc = event.target.result;
-        createAlumniCard(fullName, graduationYear, message, imageSrc);
+        createAlumniCard(fullName, profession, graduationYear, message, imageSrc);
     };
     
     if (photo) {
@@ -96,7 +96,7 @@ document.getElementById("alumni-registration-form").addEventListener("submit", f
     toggleRegistrationForm();
 });
 
-function createAlumniCard(fullName, graduationYear, message, imageSrc) {
+function createAlumniCard(fullName, profession, graduationYear, message, imageSrc) {
     const alumniCardsContainer = document.getElementById("alumniCardsContainer");
 
     // Create the card element
@@ -112,8 +112,12 @@ function createAlumniCard(fullName, graduationYear, message, imageSrc) {
     const nameElement = document.createElement("h3");
     nameElement.textContent = fullName;
 
+    const professionElement = document.createElement("p");
+    professionElement.textContent = profession;
+
     // Create the graduation year element
     const yearElement = document.createElement("p");
+    yearElement.style.fontWeight = "bold";
     yearElement.textContent = `Class of ${graduationYear}`;
 
     // Create the message element
@@ -123,6 +127,7 @@ function createAlumniCard(fullName, graduationYear, message, imageSrc) {
     // Append all elements to the card
     card.appendChild(img);
     card.appendChild(nameElement);
+    card.appendChild(professionElement);
     card.appendChild(yearElement);
     card.appendChild(messageElement);
 
@@ -302,6 +307,7 @@ document.addEventListener('scroll', function() {
         }
     });
 });
+
 
 
 

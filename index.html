@@ -7,11 +7,16 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/nav.css">
     <link rel="stylesheet" href="assets/css/admissions_style.css">
+    <link rel="stylesheet" href="assets/css/news-events.css">
     <link rel="stylesheet" href="assets/css/academics_styl.css">
     <link rel="stylesheet" href="assets/css/staff_style.css">
     <link rel="stylesheet" href="assets/css/ai_style.css">
+    <link rel="stylesheet" href="assets/css/about-section.css">
 
     <link rel="icon" href="assets/icons/Fike-Logo.jpg" type="image/jpeg">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 </head>
 <body>
     <div class="full-background">
@@ -60,7 +65,6 @@
         });
     </script>
         
-        
     <section id="home">
         <div class="welcome-image">
             <div class="welcome-text">
@@ -101,10 +105,27 @@
 
     <!-- Admissions Section -->
     <section id="admissions" class="section">
-        <h2>Admissions</h2>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 class="text-3xl font-bold mb-4 animate__animated animate__fadeInUp">Admissions</h2>
         <img src="assets/images/community.jpeg" alt="Admissions" class="section-image">
         <p>Find out how you can join our school community...</p>
         
+        <div class="faq-section">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq">
+                <h4>How can I apply?</h4>
+                <p>Fill out the online application form and our admissions team will get in touch.</p>
+            </div>
+            <div class="faq">
+                <h4>What are the required documents?</h4>
+                <p>You'll need your birth certificate, latest academic transcript, and proof of residence.</p>
+            </div>
+        </div>
+
         <!-- Step-by-Step Process -->
         <div class="admission-process">
             <div class="step">
@@ -210,30 +231,46 @@
                 </blockquote>
             </div>
         </div>
-        
-        
-        <div class="faq-section">
-            <h3>Frequently Asked Questions</h3>
-            <div class="faq">
-                <h4>How can I apply?</h4>
-                <p>Fill out the online application form and our admissions team will get in touch.</p>
-            </div>
-            <div class="faq">
-                <h4>What are the required documents?</h4>
-                <p>You'll need your birth certificate, latest academic transcript, and proof of residence.</p>
-            </div>
-        </div>
 
-        <video controls class="responsive-video">
-            <source src="assets/videos/school-tour.mp4" type="video/mp4">
+        <video autoplay muted loop class="responsive-video">
+            <source src="assets/videos/3Q-Tour-2017-Sithabile-Sec-School.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        
+
+        <br><br><br><br><br><br><br><br>
+        <div id="policy" class="policy-section">
+            <div class="content">
+                <h2>Welcome to the Policy Page of Sithabile Secondary School</h2>
+                <p>Here, we uphold the values of <strong>transparency, accountability, and excellence</strong> in all aspects of our operations. Our school is well-led and organized, ensuring that our policies and codes of conduct are not just documents, but living principles that guide our community towards success.</p>
+    
+                <h4>Admission Policy</h4>
+                <p>Our Admission Policy ensures fairness and equity in the enrollment process, welcoming students from diverse backgrounds into our school family.</p>
+    
+                <h4>Code of Conduct</h4>
+                <p>With a clear Code of Conduct in place, we cultivate an environment of <strong>respect, responsibility, and safety</strong>, where students can thrive academically and socially. This contributes to a positive school culture characterized by well-behaved learners, smooth academic processes, and high performance by our students.</p>
+    
+                <h4>Assessment Policy</h4>
+                <p>Our Assessment Policy ensures that evaluation methods are <strong>fair, transparent, and aligned</strong> with our educational objectives. This promotes a culture of <strong>continuous improvement</strong> and allows us to provide targeted support to students while celebrating their achievements.</p>
+    
+                <p>At Sithabile Secondary School, we are proud of the outcomes of a well-governed school – <strong>disciplined learners, engaged parents, dedicated educators, and outstanding academic performance</strong>.</p>
+    
+                <p>As you explore our official documents, we invite you to witness the <strong>commitment and dedication</strong> that define our school community.</p>
+            </div>
+            <div class="school-logo">
+                <img src="assets/icons/Fike-Logo.jpg" alt="Sithabile Secondary School Logo">
+            </div>
+        </div>
+        <br><br><br><br><br><br><br><br>
     </section>
     
     <!-- Academics Section -->
     <section id="academics" class="section">
-        <h2>Academics</h2>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 class="text-3xl font-bold mb-4 animate__animated animate__fadeInUp">Academics</h2>
         <div class="rcl-header">
             <h2>Our RCL</h2>
         </div>
@@ -351,25 +388,160 @@
 
 
     <!-- News & Events Section -->
-    <section id="news" class="section">
-        <h2>News & Events</h2>
+    <section id="news" class="section-news-events">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 class="text-3xl font-bold mb-4 animate__animated animate__fadeInUp" style="color: #4d7daf;">News & Events</h2>
         <img src="assets/images/newsevents.jpeg" alt="News & Events" class="section-image">
-        <style>
-            .section-image {
-                max-width: 100%; /* Make the image responsive */
-                height: auto; /* Maintain the aspect ratio */
-                border-radius: 15px; /* Apply a border radius for rounded corners */
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for a lifted effect */
-                margin-top: 20px; /* Add some margin if needed */
-            }
-        </style>
-        <p>Stay up to date with our latest news and events...</p>
-        <button onclick="showUpcomingEvents()">View Events</button>
+
+        <div class="news-container">
+
+            <!-- News Item 1 -->
+            <div class="news-item">
+                <h3 class="news-title">Annual Science Fair Highlights</h3>
+                <p class="news-date">Published on: October 20, 2024</p>
+                <p class="news-snippet">Discover the incredible projects our students showcased at this year's Science Fair, promoting innovation and collaboration...</p>
+                <a href="https://ilanganews.co.za/" target="_blank" class="source-link" title="View Source">
+                    <span class="source-icon">🔗</span>
+                </a>
+            </div>
+    
+            <div class="news-item">
+                <h3 class="news-title">Upcoming Cultural Day</h3>
+                <p class="news-date">Published on: November 5, 2024</p>
+                <p class="news-snippet">Join us for an unforgettable celebration of culture and heritage at Sithabile Secondary...</p>
+                <a href="https://www.isolezwe.co.za/" target="_blank" class="source-link" title="View Source">
+                    <span class="source-icon">🔗</span>
+                </a>
+            </div>
+    
+            <div class="news-item">
+                <h3 class="news-title">Sports Day Recap</h3>
+                <p class="news-date">Published on: November 12, 2024</p>
+                <p class="news-snippet">Our students showcased their athletic skills during the annual Sports Day, fostering teamwork and school spirit...</p>
+                <a href="https://ilanganews.co.za/" target="_blank" class="source-link" title="View Source">
+                    <span class="source-icon">🔗</span>
+                </a>
+            </div>
+            
+            <div class="news-item">
+                <h3 class="news-title">Math Olympiad Winners</h3>
+                <p class="news-date">Published on: November 18, 2024</p>
+                <p class="news-snippet">Congratulations to our top achievers who represented our school in the Math Olympiad, bringing home multiple accolades...</p>
+                <a href="https://ilanganews.co.za/" target="_blank" class="source-link" title="View Source">
+                    <span class="source-icon">🔗</span>
+                </a>
+            </div>
+            
+            <div class="news-item">
+                <h3 class="news-title">Career Guidance Seminar</h3>
+                <p class="news-date">Published on: November 22, 2024</p>
+                <p class="news-snippet">Industry experts joined us for a seminar to guide learners in exploring potential career paths and goals...</p>
+                <a href="https://www.isolezwe.co.za/" target="_blank" class="source-link" title="View Source">
+                    <span class="source-icon">🔗</span>
+                </a>
+            </div>
+            
+            <div class="news-item">
+                <h3 class="news-title">Library Renovation Complete</h3>
+                <p class="news-date">Published on: November 28, 2024</p>
+                <p class="news-snippet">We are excited to announce the completion of our library renovation, offering modern facilities and a quiet space for learning...</p>
+                <a href="https://www.isolezwe.co.za/" target="_blank" class="source-link" title="View Source">
+                    <span class="source-icon">🔗</span>
+                </a>
+            </div>
+            
+            <div class="news-item">
+                <h3 class="news-title">Holiday Charity Drive</h3>
+                <p class="news-date">Published on: December 1, 2024</p>
+                <p class="news-snippet">Our students and staff are gathering donations for our holiday charity drive, aiming to support local communities...</p>
+                <a href="https://www.isolezwe.co.za/" target="_blank" class="source-link" title="View Source">
+                    <span class="source-icon">🔗</span>
+                </a>
+            </div>
+            
+        </div>
+
+    <br>
+    <br>
+    <br>
+        <h2 class="text-3xl font-bold mb-4 animate__animated animate__fadeInUp" style="color: #4d7daf;">Blog</h2>
+        <div id="blog" class="blog-grid">
+            <!-- Blog Card 1 -->
+            <div class="blog-card">
+                <img src="assets/images/news-image-01.jpeg" alt="Teacher Event" class="blog-image">
+                <div class="blog-content">
+                    <h3 class="blog-title">Teacher Workshop Success</h3>
+                    <p class="blog-date">Published on: November 10, 2024</p>
+                    <p class="blog-description">Our dedicated teachers attended a professional development workshop, sharing innovative teaching strategies...</p>
+                </div>
+            </div>
+    
+            <!-- Blog Card 2 -->
+            <div class="blog-card">
+                <img src="assets/images/news-image-02.jpeg" alt="Learner Event" class="blog-image">
+                <div class="blog-content">
+                    <h3 class="blog-title">Learner Science Competition</h3>
+                    <p class="blog-date">Published on: November 15, 2024</p>
+                    <p class="blog-description">Students displayed exceptional skills in the annual science competition, creating inspiring and innovative projects...</p>
+                </div>
+            </div>
+
+            <!-- Blog Card 3 -->
+            <div class="blog-card">
+                <img src="assets/images/news-image-03.jpeg" alt="Teacher Event" class="blog-image">
+                <div class="blog-content">
+                    <h3 class="blog-title">Extracurricular Achievements</h3>
+                    <p class="blog-date">Published on: November 20, 2024</p>
+                    <p class="blog-description">Teachers and learners showcased their extracurricular talents, with standout performances in drama and sports.</p>
+                </div>
+            </div>
+
+            <!-- Blog Card 4 -->
+            <div class="blog-card">
+                <img src="assets/images/news-image-04.jpeg" alt="Learner Event" class="blog-image">
+                <div class="blog-content">
+                    <h3 class="blog-title">Art Exhibition by Learners</h3>
+                    <p class="blog-date">Published on: December 1, 2024</p>
+                    <p class="blog-description">Our creative learners displayed impressive artworks during the annual exhibition, highlighting diverse artistic skills.</p>
+                </div>
+            </div>
+
+            <!-- Blog Card 5 -->
+            <div class="blog-card">
+                <img src="assets/images/news-image-05.jpeg" alt="Teacher Event" class="blog-image">
+                <div class="blog-content">
+                    <h3 class="blog-title">Teacher Training Seminar</h3>
+                    <p class="blog-date">Published on: December 5, 2024</p>
+                    <p class="blog-description">An intensive training session equipped teachers with new technology tools to enhance classroom engagement and learning.</p>
+                </div>
+            </div>
+
+            <!-- Blog Card 6 -->
+            <div class="blog-card">
+                <img src="assets/images/news-image-06.jpeg" alt="Learner Event" class="blog-image">
+                <div class="blog-content">
+                    <h3 class="blog-title">Community Outreach Program</h3>
+                    <p class="blog-date">Published on: December 10, 2024</p>
+                    <p class="blog-description">Learners volunteered for community service, fostering a spirit of compassion and giving back to the society.</p>
+                </div>
+            </div>
+
+
+        </div>
     </section>
 
     <!-- Staff Directory Section -->
     <section id="staff" class="section">
-        <h2>Staff Directory</h2>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 class="text-3xl font-bold mb-4 animate__animated animate__fadeInUp">Staff Directory</h2>
        <div class="flex-container">
             <div class="teachers-image">
                 <img src="assets/images/Presentation-amico.svg" alt="Teachers image" class="section-image">
@@ -449,7 +621,12 @@
 
     <!-- Student Resources Section -->
     <section id="student-resources" class="section">
-        <h2>Student Resources</h2>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 class="text-3xl font-bold mb-4 animate__animated animate__fadeInUp">Student Resources</h2>
         <img src="assets/images/student-resources-svg.jpeg" alt="Student Resources" class="section-image">
         <p style="color: rgb(217, 217, 217);" >Explore resources available to our students...</p>
 
@@ -551,6 +728,11 @@
 
     <!--Alumni Section-->
     <section id="alumni" class="alumni-section">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <div class="alumni-container">
             <div class="welcome-text">
                 <img src="assets/images/alumni-image.jpg" alt="Alumni Image" class="section-image">
@@ -563,7 +745,7 @@
                         margin-top: 20px; /* Add some margin if needed */
                     }
                 </style>
-                <h2>Welcome Alumni!</h2>
+                <h2 class="text-3xl font-bold mb-4 animate__animated animate__fadeInUp">Welcome Alumni!!</h2>
                 <p>We are proud of our alumni and we are eager to stay connected with you. Please register below to stay updated with our latest news and events.</p>
             </div>
             
@@ -659,39 +841,163 @@
         </div>    
     </section>
 
-    <!-- About Us Section -->
-    <section id="about" class="section">
-        <style>
-            /* Styling for About Us section */
-            #about {
-                position: relative;
-                background: linear-gradient(135deg, #4d7daf 50%, #ffffff 50%); /* Blue and white split diagonally */
-                color: #333; /* Dark text for readability */
-                padding: 40px;
-                text-align: center;
-                border-radius: 10px; /* Optional: For smooth corners */
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
-            }
+    <!--about Section-->
+    <section id="about" class="relative bg-gradient-to-br from-[#4d7daf] to-white text-gray-800 p-10 rounded-lg shadow-lg text-center">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 class="text-3xl font-bold mb-4 animate__animated animate__fadeInUp">About Us</h2>
 
-            /* Styling for the image */
-            .section-image {
-                max-width: 100%;
-                height: auto;
-                border-radius: 15px;
-                margin-top: 20px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            }
-
-            /* Ensure text inside the section is readable */
-            #about h2, #about p {
-                z-index: 1; /* Ensure text appears above the background */
-                position: relative;
-            }
-        </style>
-        <h2>About Us</h2>
         <img src="assets/images/aboutus.jpeg" alt="About Us" class="section-image">
-        <p>Welcome to our school! We are dedicated to fostering educational excellence...</p>
+
+        <div class="accordion mt-10">
+            <button class="accordion-header">Our Mission</button>
+            <div class="accordion-content">
+                <p style="color: rgb(112, 112, 112);">Sithabile Secondary School's mission is centered on providing a quality education that empowers 
+                    learners to excel in their academic and personal pursuits. The school aims to foster an environment
+                    conducive to intellectual growth, where students can acquire and apply knowledge and skills in meaningful ways. 
+                    This commitment aligns with the broader educational goals of the KwaZulu-Natal Department of Education, 
+                    which emphasizes holistic development and the importance of contextual learning that is sensitive to both local
+                     and global imperatives</p>
+            </div>
+        
+            <button class="accordion-header">Our Vision</button>
+            <div class="accordion-content">
+                <p style="color: rgb(112, 112, 112);">The school's vision reflects its dedication to nurturing well-rounded individuals who are prepared for 
+                    the challenges of the future. Sithabile Secondary School seeks to be a beacon of educational excellence 
+                    within the Amatikwe community, promoting values such as respect, responsibility, and resilience among its 
+                    students</p>
+            </div>
+
+            <button class="accordion-header">Our History</button>
+            <div class="accordion-content">
+                <p style="color: rgb(112, 112, 112);">Sithabile is a public secondary school situated at Amatikwe Area 8. 
+                    The School was established in 1992 housing in prefabricated structures (tin shacks) grade 8 only and less than 12 educators. 
+                    Today it is a big and modern school starting from grade 8 to grade 12 with an enrolment of about 1400 learners and 45 
+                    educators. Sithabile Secondary School has, over the years, been producing good results at Matric level, and is proud to 
+                    have produced learners who persued different careers in various fields including science, social science and education.
+                    5</p>
+            </div>
+        </div>
+
+        <div class="timeline mt-12 max-w-4xl mx-auto">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h4 class="font-bold text-xl">Founded in 2000</h4>
+                    <p style="color: rgb(112, 112, 112);">
+                        At Sithabile Secondary School, we envision a future where every student has access to 
+                        quality education that empowers them to reach their full potential. We are dedicated to 
+                        fostering an inclusive and supportive learning environment that nurtures curiosity, critical 
+                        thinking, and personal growth. Our goal is to equip students with the knowledge, skills, and 
+                        values necessary to thrive in an ever-changing world.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h4 class="font-bold text-xl">2010 - New classes</h4>
+                    <p style="color: rgb(112, 112, 112);">
+                        Sithabile Secondary School has recently opened a new facility to accommodate the growing community 
+                        in Amatikwe, reflecting its commitment to providing quality education and supporting local families. 
+                        This expansion aims to address the increasing demand for educational resources and spaces, ensuring 
+                        that more students can access quality learning opportunities within their community.</p>
+                </div>
+            </div>
+            <!-- Add more items as needed -->
+        </div>
+        
+
+        <div class="video-container relative">
+            <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover filter blur-sm">
+                <source src="assets/videos/Inanda-Dam-KwaZulu-Natal.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center">
+                <h2 class="text-white text-4xl font-bold mb-6">Welcome to Our School</h2>
+
+                <div class="stats mt-10 flex justify-around">
+                    <div class="stats mt-4 flex justify-around gap-6">
+                        <script>
+                            function animateCounter(id, targetNumber, duration) {
+                            const element = document.getElementById(id);
+                            let start = 0;
+                            const increment = targetNumber / (duration / 16); // Approximation for 60 fps (16ms per frame)
+        
+                            function updateCounter() {
+                                start += increment;
+                                if (start >= targetNumber) {
+                                    element.innerText = Math.floor(targetNumber);
+                                } else {
+                                    element.innerText = Math.floor(start);
+                                    requestAnimationFrame(updateCounter);
+                                }
+                            }
+        
+                            updateCounter();
+                        }
+        
+                        function isInViewport(element) {
+                            const rect = element.getBoundingClientRect();
+                            return (
+                                rect.top >= 0 &&
+                                rect.left >= 0 &&
+                                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                            );
+                        }
+        
+                        document.addEventListener("DOMContentLoaded", function () {
+                            const statsSection = document.querySelector('.stats');
+                            let hasAnimated = false;
+        
+                            window.addEventListener('scroll', function () {
+                                if (isInViewport(statsSection) && !hasAnimated) {
+                                    animateCounter('learnerCount', 1420, 2000); // Count up to 1,474 in 2 seconds
+                                    animateCounter('staffCount', 45, 2000); // Count up to 45 in 2 seconds
+                                    hasAnimated = true;
+                                }
+                            });
+                        });
+        
+                        </script>
+                        <div class="text-center bg-blue-600 bg-opacity-75 rounded-lg border border-white p-4">
+                            <h4 id="learnerCount" class="text-3xl font-bold text-white">0</h4>
+                            <p class="text-white">Number of Learners</p>
+                        </div>
+                        <div class="text-center bg-blue-600 bg-opacity-75 rounded-lg border border-white p-4">
+                            <h4 id="staffCount" class="text-3xl font-bold text-white">0</h4>
+                            <p class="text-white">Number of Teaching Staff</p>
+                        </div>
+                </div>                
+            </div>
+        </div> 
+
+        <script>
+            document.querySelectorAll('.accordion-header').forEach(button => {
+                button.addEventListener('click', () => {
+                    const content = button.nextElementSibling;
+                    const maxHeight = content.style.maxHeight;
+
+                    document.querySelectorAll('.accordion-content').forEach(item => {
+                        item.style.maxHeight = null;
+                    });
+
+                    if (!maxHeight) {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                    }
+                });
+            });
+        </script>
+
+        
+        
     </section>
+    
     
     <!-- Chat bot  -->
     <div class="chat-container">
@@ -722,6 +1028,7 @@
     <div class="open-chat-btn">
         <img src="assets/icons/conversation-alt-svgrepo-com.svg" alt="chat bot logo" class="chatbot">
     </div>
+    
     
 
     <footer>
@@ -784,7 +1091,7 @@
     
     <footer class="cop-right">
         <p class="footer-text">
-            Copyright &copy; <span id="year">2024</span> <a href="admin.html" class="footer-link" style="text-decoration: none; color: inherit;">Sithabile Secondary School</a> | All Rights Reserved | Powered by Thandazani Mbutho
+            Copyright &copy; <span id="year">2024</span> <a href="admin-login.html" class="footer-link" style="text-decoration: none; color: inherit;">Sithabile Secondary School</a> | All Rights Reserved | Powered by Thandazani Mbutho
         </p>
         <style>
             /* Footer Styling */
@@ -880,6 +1187,7 @@
 
     <script src="assets/js/script.js"></script>
     <script src="assets/js/admissions_script.js"></script>
-    <script src="assets/js/ai_script.js"></script>
+    <script src="assets/js/ai_script.js" defer></script>
+    <script src="assets/js/news-events.js" defer></script>
 </body>
 </html>

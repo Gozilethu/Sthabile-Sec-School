@@ -1,0 +1,135 @@
+/* Styling for About Us Section */
+#about {
+    position: relative;
+    background: linear-gradient(135deg, #4d7daf 50%, #ffffff 50%);
+    color: #333;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the heading */
+#about h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+/* Styling for the image */
+.section-image {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto 0;
+    border-radius: 12px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the paragraph */
+#about p {
+    max-width: 600px;
+    margin: 24px auto 0;
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 20px;
+    border-left: 2px solid #4d7daf;
+}
+.timeline-item {
+    margin: 20px 0;
+    padding-left: 20px;
+    position: relative;
+}
+.timeline-item::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #4d7daf;
+    border-radius: 50%;
+    position: absolute;
+    left: -8px;
+    top: 0;
+}
+.timeline-content {
+    background: #ffffff;
+    padding: 10px 15px;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.video-container {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.accordion-header {
+    background: #4d7daf;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 5px;
+}
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 15px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+}
+.accordion-content p {
+    margin: 10px 0;
+}
+.stats div {
+    margin: 20px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2.5rem; /* Adjust the space between stats */
+}
+
+.stats .text-center {
+    background-color: #4d7daf; /* Tailwind blue-600 */
+    background-opacity: 0.75; /* Adjust opacity */
+    border-radius: 1rem; /* Rounded corners */
+    border: 1px solid white; /* White border */
+    padding: 1rem; /* Padding inside the div */
+    text-align: center;
+}
+
+.stats h4 {
+    font-size: 1.875rem; /* 3xl font size */
+    font-weight: bold;
+    color: white;
+}
+
+.stats p {
+    color: white;
+}
+
+    /* If you need more gap between the cards in the second div */
+.stats .gap-6 {
+    gap: 1.5rem; /* Adjust the gap between each card */
+}

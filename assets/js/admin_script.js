@@ -72,26 +72,6 @@ document.addEventListener('contextmenu', function(event) {
     event.preventDefault();
 });
 
-// Function to toggle between Admin Login and Dashboard
-function handleLogin(event) {
-    event.preventDefault();
-    
-    const passwordInput = document.getElementById('admin-password').value;
-
-    // Example password validation (replace with actual validation or fetch from DB)
-    const correctPassword = "admin123"; // Replace this with the actual validation method
-
-    if (passwordInput === correctPassword) {
-        // Hide the login card
-        document.getElementById('admin-login').classList.add('hidden');
-        
-        // Show the admin dashboard
-        document.getElementById('admin-dashboard').classList.remove('hidden');
-    } else {
-        alert("Invalid password! Please try again.");
-    }
-}
-
 // Handle adding staff dynamically
 document.getElementById('add-staff-form').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent the default form submission

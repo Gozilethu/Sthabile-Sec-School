@@ -1,3 +1,16 @@
+openChatButton.addEventListener('click', function() {
+    console.log('Open button clicked');
+    chatContainer.classList.add('open');
+    openChatButton.style.display = 'none';
+});
+
+closeChatButton.addEventListener('click', function() {
+    console.log('Close button clicked');
+    chatContainer.classList.remove('open');
+    openChatButton.style.display = 'flex';
+});
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const openChatButton = document.querySelector('.open-chat-btn');
     const chatContainer = document.querySelector('.chat-container');
@@ -60,9 +73,8 @@ document.querySelector('.send-btn').addEventListener('click', function() {
             botMessageDiv.classList.add('chat-message', 'bot');
 
             botMessageDiv.textContent = "let get that information for you";/////////////////////////////////////////////////////////
-
-            botMessageDiv.textContent = "Let me get that information for you!";
-
+            displayBotMessage(message);
+            
             document.querySelector('.chat-messages').appendChild(botMessageDiv);
         }, 1000);
     }

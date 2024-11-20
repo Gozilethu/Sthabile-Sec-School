@@ -355,11 +355,11 @@ footer.cop-right p {
 }
 
 .alumni-card-display img {
-    border-radius: 50%;
+    border-radius: 5%;
     width: 80px;
     height: 80px;
     object-fit: cover;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .alumni-card-display h3 {
@@ -924,3 +924,66 @@ form input, form select {
     }
 }
 
+/* Main policy section styling */
+.policy-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Content section */
+.content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.content h1, .content h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.content p {
+    color: #34495e;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+/* School logo styling */
+.school-logo {
+    flex-basis: 200px;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.school-logo img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .policy-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .school-logo {
+        margin-top: 20px;
+    }
+
+    .content {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+}

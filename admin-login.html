@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="assets/css/admin_style.css">
+    <link rel="icon" href="assets/icons/Fike-Logo.jpg" type="image/jpeg">
+</head>
+<body>
+    <!-- Admin Login Card -->
+    <div class="admin-login-card" id="admin-login">
+        <img src="assets/icons/admin-users-svgrepo-com.svg" alt="Admin Avatar" class="admin-avatar">
+        <h2>Admin Login</h2>
+        <form id="admin-login-form" method="post" action="login.php">
+            <label for="admin-password">Password:</label>
+            <input type="password" id="admin-password" name="admin-password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script>
+        function handleLogin(event) {
+            event.preventDefault(); // Prevent form submission
+            
+            // Example password validation
+            const correctPassword = "admin123"; // Replace with your desired password
+            const enteredPassword = document.getElementById('admin-password').value;
+    
+            if (enteredPassword === correctPassword) {
+                // Redirect to admin-dashboard.html
+                window.location.href = 'admin-dashboard.html';
+            } else {
+                alert('Incorrect password. Please try again.');
+            }
+        }
+    </script>
+    
+</body>
+<script src="assets/js/admin_script.js"></script>
+</html>
+
